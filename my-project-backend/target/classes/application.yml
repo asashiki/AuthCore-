@@ -1,0 +1,31 @@
+spring:
+
+  security:
+    filter:
+      order: -100
+    jwt:
+      key: qaz
+      expire: 7
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      #password: your_password  # 如果没有密码，去掉这一行
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/web_study
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mail:
+    host: smtp.163.com
+    username: wy330676495@163.com
+    password: DSeUT6LZSXJjk8gK
+
+  rabbitmq:
+    addresses: localhost
+    username: guest
+    password: guest
+    virtual-host: /
